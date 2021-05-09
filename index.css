@@ -53,11 +53,36 @@ header{
 .navbar li a{
     text-decoration: white;
     color: white;
+    padding-bottom: 7px;
+    transition: all 0.5s;
+    position: relative; 
 }
 
 .navbar li a:hover{
-    color: #d5f700;
+     color: #d5f700;
+    border-bottom: 1px solid #d5f700;
+    font-size: 20px; 
+    /* transform: scale(2,2);  */
+    
+    
 }
+
+/* .nabvar li a:after{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: #d5f700;
+  background: #aaa;
+  height: 1px;
+}
+
+.nabvar li a:hover:after{
+    width: 100%;
+} */
 
 .content{
     height: 90%;
@@ -77,11 +102,14 @@ header{
 }
 .content h2{
     color: white;
-    font-size: 2rem;
-    letter-spacing: 1rem;
+    /* margin-top: 10px; */
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    padding-left: 5px;
 }
 
 .second-heading{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +119,12 @@ header{
     width: 70px;
     height: 2px;
     background-color: #d5f700;
+    transition: width 2s;
 }
-/* .second-heading{
-    border: 1px solid white;
-} */
+
+
+.expand{
+    transform: scale(2);
+    transition: all 4s;
+    /* transition-delay: 1s; */
+}
