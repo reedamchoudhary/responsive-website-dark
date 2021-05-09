@@ -22,10 +22,20 @@ header{
 }
 
 .logo img{
-    height: 150px;
+    height: 100px;
     width: auto;
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 70px;
     padding: 0;
+}
+
+.navbar{
+    text-align: right;
+}
+
+.navbar li{
+    display: inline;
+    margin-right: 5px;
+    
 }
