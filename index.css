@@ -58,14 +58,40 @@ header{
     position: relative; 
 }
 
+.navbar li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+    transition: all 1s;
+}
+
+.navbar li a:hover:after{
+    width: 100%;
+    /* color: #d5f700; */
+    background-color: #d5f700;
+}
+
 .navbar li a:hover{
+    color:#d5f700;
+}
+
+
+
+/* .navbar li a:hover{
      color: #d5f700;
     border-bottom: 1px solid #d5f700;
     font-size: 20px; 
-    /* transform: scale(2,2);  */
+    /* transform: scale(2,2);  
     
     
-}
+} */
 
 /* .nabvar li a:after{
     position: absolute;
