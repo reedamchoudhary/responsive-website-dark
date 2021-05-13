@@ -83,33 +83,6 @@ header{
 }
 
 
-
-/* .navbar li a:hover{
-     color: #d5f700;
-    border-bottom: 1px solid #d5f700;
-    font-size: 20px; 
-    /* transform: scale(2,2);  
-    
-    
-} */
-
-/* .nabvar li a:after{
-    position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: #d5f700;
-  background: #aaa;
-  height: 1px;
-}
-
-.nabvar li a:hover:after{
-    width: 100%;
-} */
-
 .content{
     height: 90%;
     width: 100%;
