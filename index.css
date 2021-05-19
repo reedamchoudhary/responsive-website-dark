@@ -250,8 +250,16 @@ header{
     z-index: 1;
     width: 100%;
     height: 2px;
-    background-color: #0C0C0C;
+    background-color: #0C0C0C ;
     transform: rotate(-60deg);
+}
+
+.arrow-1:hover div{
+    background-color: #d5f700;
+}
+
+.arrow-1:hover div::after{
+    background-color: #d5f700;
 }
 
 .arrow-2{
@@ -291,6 +299,13 @@ header{
     transform: rotate(60deg);
 }
 
+.arrow-2:hover div{
+    background-color: #d5f700;
+}
+
+.arrow-2:hover div::after{
+    background-color: #d5f700;
+}
 
 
 .sets{
@@ -312,4 +327,58 @@ header{
     top: 0;
     left: 0;
     display: none;
+}
+
+/* **************************************************CONTACT ME************************** */
+
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+
+input{
+    width: 100%;
+    height: 40px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    border: 3px solid #0C0C0C;
+}
+
+.form{
+    width: 70%;
+    height: 80%;
+    align-items: center;
+    /* background-color: #aaa; */
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+
+input,textarea{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    border: none;
 }

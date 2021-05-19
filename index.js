@@ -22,3 +22,8 @@ arrow2.addEventListener("click", () => {
     arrow1.style.display="block"
     arrow2.style.display="none"
 })
+
+// arrow1.addEventListener("mouseover",()=>{
+//     document.querySelector(".arrow-1 div").style.backgroundColor = "#d5f700"
+//     document.querySelector(".arrow-1 div::after").style.backgroundColor = "#d5f700"
+// })
