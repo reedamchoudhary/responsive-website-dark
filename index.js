@@ -3,6 +3,9 @@ var arrow1 = document.querySelector(".arrow-1");
 var arrow2 = document.querySelector(".arrow-2");
 var set1 = document.querySelector(".set-1");
 var set2 = document.querySelector(".set-2");
+var button = document.querySelector(".message button");
+
+
 arrow1.addEventListener("click", () => {
     console.log("inside event listner")
     set1.style.transform="translateX(-500px)"
@@ -21,6 +24,10 @@ arrow2.addEventListener("click", () => {
     setTimeout(()=> set2.style.display = "none", 300)
     arrow1.style.display="block"
     arrow2.style.display="none"
+})
+
+button.addEventListener("click", () => {
+    
 })
 
 // arrow1.addEventListener("mouseover",()=>{

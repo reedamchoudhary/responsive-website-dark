@@ -119,6 +119,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transform: scale(0);
+    transition: all 1s; */
+    
 }
 
 .second-heading div{
@@ -129,11 +132,12 @@ header{
 }
 
 
-.expand{
+/* .expand{
+    transition-delay: 3000ms;
     transform: scale(2);
-    transition: all 4s;
-    /* transition-delay: 1s; */
-}
+    /* transition: all 4s; *
+    /* transition-delay: 1s; *
+} */
 
 /* **********************************************About Me*************************** */
 
@@ -145,7 +149,9 @@ header{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    background: #faf3f3;
     position: absolute;
     top: 0;
     left: 0;
@@ -326,7 +332,9 @@ header{
     height: 100vh;
     top: 0;
     left: 0;
-    display: none;
+    background: #faf3f3;
+    /* display: none; */
+    visibility: hidden;
 }
 
 /* **************************************************CONTACT ME************************** */
@@ -338,10 +346,12 @@ header{
     justify-content: center;
     align-items: center;
     /* color: white; */
+    background: #faf3f3;
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 
 }
 
@@ -382,6 +392,12 @@ header{
     border-bottom: 2px solid #d5f700;
     background: transparent;
     
+}
+
+.message h1{
+    padding-bottom: 100px;
+    color: #d5f700;
+    letter-spacing: 1.5px;
 }
 
 input,textarea::placeholder{
