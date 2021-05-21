@@ -41,7 +41,8 @@ header{
 
 .navbar{
     width: 100%;
-    text-align: right;   
+    text-align: right;  
+    visibility: visible; 
 }
 
 .navbar li{
@@ -408,8 +409,21 @@ header{
 
 /* **************************************************CONTACT ME************************** */
 
+.section-3{
+    width: 200%;
+    height: 200vh;
+    background-color: #faf3f3;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    /* overflow: hidden; */
+}
+
 .contact-page{
-    width: 100%;
+    width: 50%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -421,6 +435,7 @@ header{
     left: 0;
     /* display: none; */
     visibility: hidden;
+    transition: visibility 0.4s ease;
 
 }
 
@@ -432,6 +447,8 @@ header{
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px gray;
+    opacity: 0;
+    transition: opacity 0.4s ease;
     
 }
 
@@ -502,4 +519,115 @@ input:focus,textarea:focus{
     font-family: inherit;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+.message button:hover{
+    background-color: #d5f700;
+    color: #0C0C0C;
+}
+
+/* **************************************************HAMBURGER***************************************** */
+
+.hamburger{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #faf3f3; */
+}
+
+.hamburger div{
+    width: 100%;
+    height: 2px;
+    background-color: #faf3f3;
+    position: relative;
+    visibility: hidden;
+}
+
+.hamburger div::after,.hamburger div::before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #faf3f3;
+}
+
+.hamburger div::before{
+    top: -5px;
+    left: 0;
+}
+
+
+/* ********************************************************MEDIA QUERIES************************************ */
+
+@media (min-width: 640px) and (max-width: 853px){
+    .navbar{
+        visibility: hidden;
+    }
+    
+    .hamburger div{
+        visibility: visible;
+    }
+
+    .content h1{
+        font-size: 3rem;
+    }
+
+    
+}
+
+@media (min-width: 480px) and (max-width: 640px){
+    .navbar{
+        visibility: hidden;
+    }
+    
+    .hamburger div{
+        visibility: visible;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("images/bg-small.jpg");
+        background-size: cover;
+    
+    }
+    
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .navbar{
+        visibility: hidden;
+    }
+    
+    .hamburger div{
+        visibility: visible;
+    }
+
+    .content h1{
+        font-size: 2rem;
+        width: 240px;
+        align-items: center;
+    }
+
+    header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("images/bg-small.jpg");
+        background-size: cover;
+    
+    }
+    
+    
 }

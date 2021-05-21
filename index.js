@@ -8,6 +8,9 @@ var aboutMe = document.getElementById("selfinfo");
 var closeAbout = document.getElementById("aboutId");
 var work = document.getElementById("work");
 var closeWork = document.getElementById("workId");
+var text = document.getElementById("text");
+var closeContact = document.getElementById("textId");
+var button = document.querySelector(".message button")
 
 
 arrow1.addEventListener("click", () => {
@@ -54,7 +57,26 @@ closeWork.addEventListener("click", () => {
     document.querySelector(".portfolio-sec").style.visibility = "hidden"
 })
 
-// arrow1.addEventListener("mouseover",()=>{
-//     document.querySelector(".arrow-1 div").style.backgroundColor = "#d5f700"
-//     document.querySelector(".arrow-1 div::after").style.backgroundColor = "#d5f700"
-// })
+text.addEventListener("click", () => {
+    document.querySelector(".contact-form").style.opacity = "1";
+    document.querySelector(".section-3").style.transform = "scale(1)";
+    document.querySelector(".contact-page").style.visibility = "visible"
+})
+
+closeContact.addEventListener("click", () => {
+    document.querySelector(".contact-form").style.opacity = "0";
+    document.querySelector(".section-3").style.transform = "scale(0)";
+    document.querySelector(".contact-page").style.visibility = "hidden"
+})
+
+button.addEventListener("click", () => {
+    button.style.backgroundColor = "green";
+    button.style.border = "green"
+    button.innerHTML = "✓ SENT";
+    // setTimeout(() => {
+    //     button.innerHTML = "SEND";
+    //     button.style.background = "inherit";
+    //     button.style.border = "2px solid #d5f700"
+    //     button.addEventListener("mouseover", button.style.backgroundColor = "#d5f700")
+    // }, 5000)
+})
